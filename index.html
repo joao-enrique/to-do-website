@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="todo-app">
+      <header>
+        <h2>Minhas tarefas</h2>
+        <span>Domingo, Ago 17</span>
+      </header>
+
+      <div class="input-box">
+        <input type="text" placeholder="O que você precisa fazer hoje?">
+        <button>+</button>
+      </div>
+
+      <div class="tabs">
+        <button class="active">All</button>
+        <button>Active</button>
+        <button>Completed</button>
+      </div>
+
+      <ul class="task-list">
+        <li>
+          <input type="checkbox" id="task1">
+          <label for="task1">Limpar quarto</label>
+        </li>
+        <li>
+          <input type="checkbox" id="task2">
+          <label for="task2">Programar</label>
+        </li>
+        <li class="completed">
+          <input type="checkbox" id="task3" checked>
+          <label for="task3">Inscreva-se</label>
+        </li>
+      </ul>
+
+      <div class="footer">
+        <span>2 items left</span>
+        <button class="clear">Clear completed</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
