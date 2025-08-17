@@ -15,6 +15,10 @@ function updateTasks() {
 
   tasks.forEach(task => {
     const checkbox = task.querySelector("input[type='checkbox']");
+
+    // 🔹 aplica ou remove a classe "completed" no <li>
+    task.classList.toggle("completed", checkbox.checked);
+
     if (!checkbox.checked) activeCount++;
 
     // filtro
